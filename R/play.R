@@ -14,6 +14,8 @@ function(object, player, ...){
             } else {
                 player <- shQuote(player)
             }
+        } else if (is.null(player)) {
+            player = "play"
         }
     }
     if(.Platform$OS.type == "windows"){
